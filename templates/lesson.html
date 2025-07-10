@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Урок</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='lesson.js') }}"></script>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/test">Тест</a>
+    </nav>
+
+    <h2>Урок: изучение слов</h2>
+    <div id="word-area"></div>
+    <button onclick="loadWord()">Следующее слово</button>
+
+    <h3>Упражнение: собери слово</h3>
+    <div id="exercise-area"></div>
+    <input type="text" id="guess" placeholder="Введите слово">
+    <button onclick="checkGuess()">Проверить</button>
+    <div id="result"></div>
+</div>
+</body>
+</html>
