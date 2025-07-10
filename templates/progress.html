@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Прогресс</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/history">История</a>
+    </nav>
+
+    <h2>Ваш прогресс, {{ username }}</h2>
+    <p>Общее количество правильных ответов: <strong>{{ correct }}</strong></p>
+</div>
+</body>
+</html>
