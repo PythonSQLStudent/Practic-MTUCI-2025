@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор уровня</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/lesson">Урок</a>
+    </nav>
+    <h2>Выберите уровень теста</h2>
+    <button onclick="location.href='/test/easy'">Лёгкий</button>
+    <button onclick="location.href='/test/medium'">Средний</button>
+    <button onclick="location.href='/test/hard'">Сложный</button>
+</div>
+</body>
+</html>
