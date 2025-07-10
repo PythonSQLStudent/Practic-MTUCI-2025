@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>История тестов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/test">Пройти тест</a>
+    </nav>
+
+    <h2>История тестов пользователя: {{ username }}</h2>
+    {% if results %}
+        <ul>
+            {% for correct, total in results %}
+                <li>{{ correct }} из {{ total }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Пока нет данных о тестах.</p>
+    {% endif %}
+</div>
+</body>
+</html>
