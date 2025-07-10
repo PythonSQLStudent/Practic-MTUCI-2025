@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Результат теста</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/test">Пройти ещё тест</a>
+        <a href="/progress">Прогресс</a>
+    </nav>
+
+    <h2>Результаты</h2>
+    <p>Вы правильно ответили на {{ score }} из {{ total }} вопросов.</p>
+    <p><strong>{{ message }}</strong></p>
+</div>
+</body>
+</html>
