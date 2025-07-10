@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Обучение английскому</title>
+    <meta charset="UTF-8" />
+    <title>Онлайн обучение английскому</title>
+    <link rel="stylesheet" href="static\styles.css" />
 </head>
 <body>
-<h1>Добро пожаловать!</h1>
-<a href="/lesson/1">Посмотреть урок 1</a>
-<a href="/test/1">Пройти тест 1</a>
+    <div class="container">
+        
+        <h1 class="title">Онлайн обучение английскому</h1>
+
+        
+        <div class="columns">
+            
+            <div class="column">
+                <h2>Пройти обучение</h2>
+                <button onclick="location.href='/lesson/1'">Урок 1</button>
+                <button onclick="location.href='/lesson/2'">Урок 2</button>
+            </div>
+            
+            <div class="column">
+                <h2>Пройти тестирование</h2>
+                <button onclick="location.href='/test/1'">Тест 1</button>
+                <button onclick="location.href='/test/2'">Тест 2</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
