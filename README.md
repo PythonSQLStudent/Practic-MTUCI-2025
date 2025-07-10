@@ -17,7 +17,7 @@
 
 1. Клонируйте проект:
    ```bash
-   git clone <https://github.com/PythonSQLStudent/Preactic-MTUCI-2025>
+   git clone https://github.com/PythonSQLStudent/Prаctic-MTUCI-2025
    ```
 
 2. Перейдите в папку проекта:
