@@ -1,0 +1,79 @@
+/* Общие стили для тела страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('my_background.jpg'); /* вставьте свою картинку сюда */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контейнер центральной области */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.8); /* полупрозрачный фон для читаемости */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Заголовок по центру */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    /* Можно добавить тень или эффект */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Колонки как flex-контейнер */
+.columns {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap; /* чтобы при маленьком экране колонки переносились */
+}
+
+/* Каждая колонка */
+.column {
+    flex: 1 1 200px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Заголовки колонок */
+.column h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Стиль кнопок */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50; /* зеленый */
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
