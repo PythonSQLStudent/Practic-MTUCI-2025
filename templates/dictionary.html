@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Словарь</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/lesson">Урок</a>
+    </nav>
+
+    <h2>Словарь</h2>
+    <ul>
+        {% for word in words %}
+            <li>{{ word.en }} — {{ word.ru }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
