@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        const testLevel = "{{ level }}";
+    </script>
+    <script src="{{ url_for('static', filename='test.js') }}"></script>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/history">История</a>
+        <a href="/progress">Прогресс</a>
+    </nav>
+
+    <h2>Тест: уровень {{ level }}</h2>
+    <div id="question-area"></div>
+    <div id="feedback"></div>
+</div>
+</body>
+</html>
